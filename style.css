@@ -29,6 +29,14 @@ header .container{
     align-items: center;
     position: absolute;
     width: 100%;
+    background: linear-gradient( 180deg,rgba(0,0,8, .7), rgba(55, 55, 55, .03) );
+    position: fixed;
+    z-index: 400;
+    transition: 500ms ease-out all;
+}
+
+header .container:hover{
+    background: black;
 }
 
 header .logo{
@@ -73,6 +81,8 @@ header .container .nav2{
 header .container .nav2 a{
     margin-right: 15px;
     margin-left: 10px;
+    font-weight: bold;
+
 }
 
 /* Pelicula Principal */
@@ -194,7 +204,7 @@ header .container .nav2 a{
     width: 50px;
     color: #fff;
     cursor: pointer;
-    z-index: 500;
+    z-index: 300;
     transition: .2s ease all;
 }
 
