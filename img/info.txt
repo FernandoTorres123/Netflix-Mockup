@@ -1,0 +1,17 @@
+<!-- <article class="tittle-carru">
+                <h3>Tendencias</h3>
+            </article>
+            <article class="container-2">
+                <button role="button" class="button-arrow-1">
+                    <img src="img/round_arrow_back_ios_white_36dp.png" alt="arrow_back" height="80">
+                </button>
+                <img src="img/chanoc.jpg" alt="santo-chanoc"                                  height="200">
+                <img src="img/Las_momias_de_Guanajuato-981837360-mmed.jpg" alt="santo-momias" height="200">
+                <img src="img/peliculas-el-santo-mujeres-vampiro.jpg" alt="santo-vampiros"    height="200">
+                <img src="img/2019092302.jpg" alt="santo-quiensabe"                           height="200">
+                <img src="img/santo-tigre.jpg" alt="santo-tigre"                              height="200">
+                <img src="img/santo-zombies.jpg" alt="santo-zombies"                          height="200">
+                <button role="button" class="button-arrow-2" height="50">
+                    <img src="img/round_arrow_forward_ios_white_36dp.png" alt="arrow-forward" height="80">
+                </button>
+            </article> -->

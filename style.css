@@ -1,0 +1,306 @@
+:root{
+    --red: #E50914;
+    --back: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--back);
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1000px;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+header .container{
+    padding: 15px 50px 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+header .logo{
+    padding-right: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--red);
+    font-size: 40px;
+}
+
+header a{
+    color: rgb(203, 203, 203);
+    text-decoration: none;
+    /* margin-right: 10px; */
+    font-size: 1em;
+}
+
+header .container .nav1{
+    display: flex;
+    align-items: center;
+}
+
+header .container .nav1 a{
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: rgb(140, 140, 140);
+}
+
+header a.activo{
+    color: rgb(255, 255, 255);
+}
+
+
+header .container .nav2{
+    display: flex;
+    align-items: center;
+}
+
+header .container .nav2 a{
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+/* Pelicula Principal */
+
+.main-movie{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgba(55, 55, 55, .50) 0%, rgba(0,0,0, .50) 100% ), url(img/santo-main-pagejpg.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 52.5em;
+    height: 52.5em;
+}
+
+.main-movie .container{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.main-movie .tittle{
+    padding-top: 4em;
+    font-weight: 600;
+    font-size: 3.6em;
+    margin-bottom: 0.4em;
+    width: 15em;
+}
+
+.main-movie .description{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.main-movie .button1{
+    background: rgba(0,0,0, .5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.23em 1.87em 0.73em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.main-movie .button1 img{
+    /* margin-top: 0.5em; */
+    padding-top: 0.7em;
+    margin-right: 0.8em;
+}
+
+.main-movie .button1:hover{
+    background: rgba(255, 255, 255, .50);
+    color: black;
+    /* filter: opacity(0.4) drop-shadow(0 0 0 red);  */
+}
+
+.main-movie .button2{
+    background: rgba(0,0,0, .5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.23em 1.87em 0.73em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.main-movie .button2 img{
+    /* margin-top: 0.5em; */
+    padding-top: 0.7em;
+    margin-right: 0.8em;
+}
+
+.main-movie .button2:hover{
+    background: rgba(255, 255, 255, .50);
+    color: black;
+}
+
+/* Controlador del titulo */
+
+.container-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.container-tittle h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Contenedor princiapl de las paliculas recomendadas */
+
+
+.recomend-movies .main-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.recomend-movies .main-container .left-arrow,
+.recomend-movies .main-container .right-arrow{
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.recomend-movies .main-container .left-arrow:hover,
+.recomend-movies .main-container .right-arrow:hover{
+    background: rgba(0,0,0, 0.8);
+}
+
+.recomend-movies .main-container .left-arrow{
+    left: 0;
+}
+.recomend-movies .main-container .right-arrow{
+    right: 0;
+}
+
+.recomend-movies .carousel-content{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* max-height: 180px; */
+}
+
+.recomend-movies .carousel-content .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    /* padding-bottom: 20px; */
+    max-height: 180px;
+    /* height: 20%; */
+}
+
+.recomend-movies .carousel-content .carousel .movie{
+    min-width: 16.66%;
+    /* max-height: 50%; */
+    transition: 500ms ease-out all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.3) ;
+}
+
+.recomend-movies .carousel-content .carousel .movie:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    overflow: visible;
+
+}
+
+
+.recomend-movies .carousel-content .carousel .movie img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+
+
+
+
+/* .tittle-carru{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.tittle-carru h3{
+    padding-left: 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container-2{
+    width: 100%;
+}
+
+.main-movie .button-arrow-1{
+    border: none;
+    padding-top: 1.56em;
+    background-color: rgba(0,0,0, 0);
+    cursor: pointer;
+}
+.main-movie .button-arrow-2{
+    border: none;
+    padding-top: 1.56em;
+    align-self: center;
+    background-color: rgba(0,0,0, 0);
+    cursor: pointer;
+} */
+/* Peliculas en carrete */
+
+.container2{
+    width: 90%;
+    margin: 110px auto 10px;
+}
+
+.second-movies{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3{
+    width: 90%;
+    margin: 0 auto 10px;
+}
+
+
+
